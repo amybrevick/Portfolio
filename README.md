@@ -14,11 +14,13 @@ A PostgreSQL-based capstone project analyzing over 90 public datasets to identif
 
 A research presentation on the ethical and market implications of AI-driven prediction models in finance, focusing on fairness, transparency, and public access.
 
+### 🎓 [Student Grade Prediction (ML)](./student_grade_prediction)
+A regression model estimating final student grades using behavioral, academic, and demographic features. Includes preprocessing pipelines, model comparison, and residual analysis.
+
 ---
 
 ## Upcoming Projects
 
-- Student Performance Prediction using Machine Learning
 - Cryptocurrency Market Trend Dashboard (Python + Plotly)
 - SQL-based KPI Tracker for Budget and Forecasting
 
