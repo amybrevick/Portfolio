@@ -1,6 +1,6 @@
 # Amy Brevick – Data Science Portfolio
 
-Welcome! This portfolio showcases selected projects from my Master’s in Data Science with a focus on predictive modeling, SQL data engineering, and ethical AI applications in finance.
+Welcome! This portfolio showcases selected projects from my Master’s in Data Science, with a focus on predictive modeling, SQL and Python data engineering, and ethical AI applications in finance.
 
 ---
 
