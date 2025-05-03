@@ -1,0 +1,83 @@
+# Interest Rate Analysis and Forecasting Database
+
+This project builds a centralized PostgreSQL database to analyze and forecast U.S. interest rate trends using economic, credit, housing, and market data. It was developed as a final capstone for a Master’s in Data Science and aims to provide transparent, research-grade insights typically reserved for institutional investors.
+
+**Summary**: A time-series PostgreSQL database for analyzing and forecasting U.S. interest rate trends. Built from over 90 public datasets and integrated with Python for financial insight and macroeconomic correlation analysis.
+
+---
+
+## Project Overview
+
+The goal was to consolidate over 90 public datasets into a clean, time-series SQL database for structured analysis of key interest rate drivers. The resulting platform enables exploratory and predictive work using Python and SQL, democratizing access to financial forecasting tools.
+
+---
+
+## Data Overview
+
+- Sources: FRED, BLS, World Bank, Yahoo Finance, OECD
+- 8 thematic tables:
+  - Interest rates
+  - Market indices
+  - Economic indicators
+  - Housing data
+  - Credit markets
+  - Exchange rates
+  - Sentiment indexes
+  - Cryptocurrency trends
+- All datasets normalized to monthly frequency.
+
+---
+
+## Tools Used
+
+- **PostgreSQL** + **pgAdmin** (schema design, data ingestion)
+- **Python** (psycopg2, pandas, seaborn, matplotlib)
+- **Excel** (pre-cleaning)
+- **GitHub** (version control and documentation)
+
+---
+
+## Analytical Insights
+
+- Strongest predictors of the 10-Year Treasury Yield included:
+  - Mortgage Rates
+  - Moody’s AAA
+  - Policy Stance Rate
+  - Industrial Production Index
+  - Treasury Bill Rate (3mo)
+  - Real GDP
+- Time-lagged indicators showed predictive strength for upcoming yield changes.
+- March 2020 forecast validated a scoring system based on macro shifts.
+
+---
+
+## Folder Structure 
+
+```
+final-project-interest-rate-analysis/
+├── sql/
+│   └── final_project_interest_rate_analysis.sql
+├── data/
+│   ├── interest_rate_data_combined.csv
+│   └── economic_data_combined.csv
+```
+
+---
+
+## How to Use
+
+1. Load the SQL schema using `final_project_interest_rate_analysis.sql` in PostgreSQL. Create tables, then IMPORT DATA before proceeding with manipulations and queries.
+2. Import cleaned data from the `data/` folder.
+3. Use Jupyter Notebooks to connect via `psycopg2` and analyze trends.
+4. Perform analysis, visualizations, and correlation testing using Python libraries like pandas, seaborn, and matplotlib.
+
+---
+
+## Future Improvements
+
+- Add ML-based forecasting models (e.g., Ridge, LSTM)
+- Migrate to daily frequency
+- Automate ETL pipelines with APIs
+
+---
+
